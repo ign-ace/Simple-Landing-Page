@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./kids.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbtn {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+    display: none;
+}
+
+nav h1 {
+    line-height: 80px;
+    font-size: 35px;
+    color: #0891b2;
+}
+
+nav ul {
+    line-height: 80px;
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+
+nav ul li a:hover {
+    background-color: #0891b2;
+    transition: 0.5s;
+}
+
+nav ul li .active {
+    background-color: #0891b2;
+}
+
+.article {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+.article h1 {
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.article p {
+    font-size: 18px;
+    color: #bcb9b9;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.article .btn {
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0891b2;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+
+.article .btn:hover {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: #0891b2;
+    border: 1px solid #0891b2;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        padding: 10px
+    }
+    .container {
+        width: 100%
+    }
+    .article {
+        width: 100%;
+        padding: 10px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+}
